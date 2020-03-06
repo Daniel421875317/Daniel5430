@@ -21,46 +21,39 @@ body {
     src: url(../resource/fonts/title.ttf)
 }
 
-@font-face {
-    font-family: proxima bold;
-    src: url(../fonts/ProximaNova-Bold.otf)
-}
-
 ul {
+    width: 100%;
     padding-left: 0;
     list-style: none;
 }
 
 ul li {
-    width: 33.3%;
-    /* margin-left: 33.3%; */
     margin-top: 20px;
-}
-
-ul li a {
-    width: 80% !important;
-    margin-left: 10%;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 span {
     margin-right: 20%;
 }
 
-.btn :hover {
-    text-decoration: none !important;
-    border: solid 2px #cdc1d8;
-    border-radius: 10px;
-    color: #b4828e;
-    background-color: #cdc1d8;
-}
-
 h1 {
     font-family: title !important;
     font-weight: 700 !important;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:active {
+    text-decoration: none !important;
 }
 
 #home {
@@ -78,9 +71,163 @@ h1 {
     text-align: center
 }
 
-.btn a {
+.btn-left a,
+.btn-right a {
+    width: 80%;
     border: solid 2px #cdc1d8;
     border-radius: 10px;
     color: #cdc1d8;
     font-size: large;
+    margin-left: 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-left :hover,
+.btn-right :hover {
+    text-decoration: none !important;
+    border: solid 2px #cdc1d8;
+    border-radius: 10px;
+    color: #b4828e;
+    background-color: #cdc1d8;
+}
+
+.btn-left,
+.btn-right {
+    width: 33.3%;
+    display: inline-block;
+}
+
+.header {
+    background: #6777ef;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.page-turning {
+    border-radius: 10px 0 0 20px;
+}
+
+.main-content {
+    padding-left: 15%;
+    width: 70%;
+    position: relative
+}
+
+.section {
+    position: relative;
+    z-index: 1
+}
+
+.section .section-header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .03);
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center
+}
+
+.banner {
+    background: url(../resource/banner.jpg) 0 0 repeat-x fixed;
+}
+
+.banner h1 {
+    margin-left: 10%;
+}
+
+.section-header table {
+    width: 100%;
+}
+
+.tab {
+    margin-bottom: 0 !important;
+}
+
+.tab li:nth-of-type(1),
+.tab li:nth-of-type(2),
+.tab li:nth-of-type(3) {
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+}
+
+.tab li:nth-of-type(1) {
+    margin-left: 0.5%;
+}
+
+.tab li:nth-of-type(4) {
+    width: 68%;
+    display: inline-block;
+}
+
+.tab-bottom {
+    width: 82%;
+    background: #71a2ec;
+    height: 3px;
+}
+
+.btn-surge {
+    background: linear-gradient(to right, #3b93f89c, #b769f39c) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #8d7cfab2;
+    margin-bottom: 0;
+}
+
+.btn-clash {
+    background: linear-gradient(to right, #59f2f79c, #3b92f89c) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px rgba(73, 189, 252, 0.521);
+    margin-bottom: 0;
+}
+
+.btn-surfboard {
+    background: linear-gradient(to right, #b769f39c, #ee589e9c) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #3030306e;
+    margin-bottom: 0;
+}
+
+.btn-ssr {
+    height: 24px;
+    margin-left: 76%;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    background: linear-gradient(to right, #eb4190f3, #e780a2f3) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #e780a2b0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-clash,
+.btn-surge,
+.btn-surfboard {
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn-clash:hover,
+.btn-surge:hover,
+.btn-surfboard:hover {
+    /* color: #4a81d3 !important; */
+    /* background: #71a2ec !important; */
+}
+
+.btn-ssr:hover {
+    background: linear-gradient(to right, #e780a2f3, #eb4190f3) !important;
 }
